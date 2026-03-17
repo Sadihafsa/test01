@@ -16,7 +16,7 @@ def home():
 def predict():
     try:
          data = request.get_json()
-        text = data.get('email', '')
+         text = data.get('email', '')
 
         # Convert input into DataFrame (adapt if your model needs different preprocessing)
         vect = vectorizer.transform([text])
